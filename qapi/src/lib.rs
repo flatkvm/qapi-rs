@@ -22,7 +22,7 @@ mod qapi {
     use serde::{Serialize, Deserialize};
     use std::io::{self, BufRead, Write};
     use qapi_spec::{self, Command};
-    use log::trace;
+    use log::{log, trace};
 
     pub struct Qapi<S> {
         pub stream: S,
